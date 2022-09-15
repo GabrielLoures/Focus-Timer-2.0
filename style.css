@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --text-content: #323238;
+  --wrapper-off: #E1E1E6;
+  --primary-color: #FFFFFF;
+  --wrapper-on: #02799D;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  display: grid;
+  min-height: 100vh;
+}
+
+main {
+  justify-self: center;
+  align-self: center;
+
+  align-items: center;
+
+  display: flex;
+  gap: 19.2rem;
+
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.clock {
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  color: var(--text-content);
+
+  display: flex;
+  gap: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+
+  list-style: none;
+
+  margin-top: 2rem;
+}
+
+.sec-sounds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  place-items: center;
+}
+
+.controls button {
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.btn-wrapper .btn-off {
+  background: var(--wrapper-off);
+  height: 15rem;
+  width: 14rem;
+
+  border-radius: 2.4rem;
+  border: none;
+
+  cursor: pointer;
+}
+
+.btn-wrapper .btn-on {
+  background: var(--wrapper-on);
+
+  height: 15rem;
+  width: 14rem;
+
+  border-radius: 2.4rem;
+  border: none;
+
+  cursor: pointer;
+}
